@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Quiz</title>
+</head>
+
+<body>
+
+    <div class="previousScores"><a href="quizscores.html">View Highscores</a></div>
+
+    <div class="scoreTimer">Time: <span id="currentTime">0</span></div>
+
+    <div class="quizCard">
+        <div id="startingScreen" class="start">
+            <h1>Star Trek Quiz Challenge</h1>
+            <p>
+                Test your knowledge of the Star Trek Uninverse within 75 seconds. Incorrect answers will decrease your
+                time by ten seconds
+            </p>
+            <button id="startButton">Start Challenge</button>
+        </div>
+
+        <div id="quizQuestions" class="hidden">
+            <h2 id="titleOfQuestions"></h2>
+            <div id="questionChoices" class="questionChoices"></div>
+        </div>
+
+        <div id="endingScreen" class="hidden">
+            <h2>Finished</h2>
+            <p>Your score was <span id="finalScore"></span>.</p>
+            <p>
+                Enter your name: <input type="text" id="name" max="10" />
+                <button id="submit">Submit scores</button>
+            </p>
+        </div>
+
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/quizquestions.js"></script>
+
+
+</body>
+
+</html>
