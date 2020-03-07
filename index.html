@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coding Quiz</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
@@ -24,12 +25,12 @@
             <button id="startButton">Start Challenge</button>
         </div>
 
-        <div id="quizQuestions" class="hidden">
+        <div id="quizQuestions" class="hide">
             <h2 id="titleOfQuestions"></h2>
             <div id="questionChoices" class="questionChoices"></div>
         </div>
 
-        <div id="endingScreen" class="hidden">
+        <div id="endingScreen" class="hide">
             <h2>Finished</h2>
             <p>Your score was <span id="finalScore"></span>.</p>
             <p>
@@ -39,6 +40,7 @@
         </div>
 
     </div>
+    <div id="response" class="response hide"></div>
 
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/quizquestions.js"></script>
